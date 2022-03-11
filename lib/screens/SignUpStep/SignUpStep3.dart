@@ -1,10 +1,9 @@
-
-
 import 'package:burmethon_app/core/models/address/CreateAddress.dart';
 import 'package:burmethon_app/core/models/user/CreateUser.dart';
 import 'package:burmethon_app/shared/widget/InputText.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'dart:developer' as developer;
 
 import '../SliderBrum.dart';
 
@@ -69,6 +68,7 @@ class _SignUpStep3State extends State<SignUpStep3> {
                     address.postalCode = _postalCodeController.text;
 
                     widget.createUser.address = address;
+                    developer.log('log', name: widget.createUser.toString());
 
                     Navigator.push(
                         context, MaterialPageRoute(builder: (context) => SliderBrum())

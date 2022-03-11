@@ -10,4 +10,9 @@ class CreateUser {
   late String password;
 
   late CreateAddress address;
+
+  @override
+  String toString() {
+    return 'CreateUser{firstName: $firstName, lastName: $lastName, phoneNumber: $phoneNumber, serialNumber: $serialNumber, email: $email, password: $password, address: $address}';
+  }
 }
