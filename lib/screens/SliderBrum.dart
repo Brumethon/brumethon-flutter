@@ -71,7 +71,7 @@ class _SliderBrumState extends State<SliderBrum> {
               },
               itemCount: cars.length,
               controller:
-              PageController(initialPage: 0, viewportFraction: 0.75),
+              PageController(initialPage: 0, viewportFraction: 0.8),
               onPageChanged: (index) {
                 setState(() {
                   currentPage = index;
@@ -96,7 +96,7 @@ class _SliderBrumState extends State<SliderBrum> {
           return Container(
             width: 7.0,
             height: 7.0,
-            margin: EdgeInsets.symmetric(horizontal: 6.0),
+            margin: EdgeInsets.symmetric(horizontal: 3.0),
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               color:
@@ -128,7 +128,7 @@ class CarouselCard extends StatelessWidget {
     return Center(
       child: Padding(
         padding: EdgeInsets.only(
-          top: 32.0,
+          top: 0.0,
           left: 8.0,
           right: 8.0,
         ),
